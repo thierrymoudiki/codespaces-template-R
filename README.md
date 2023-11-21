@@ -15,6 +15,13 @@ There are several codespace options here:
 - r-base: Use a codespace with basic R set up.
 
 See [creating a codespace in a repository](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository) for instructions on how to select which codespace you would like to use. In short, the "New with Options" button should be selected to specify which codespace configuration to use.
+
 ## I already have an R project that I want to use with codespaces!!! What should I do?
 
 See [codespaces4r](https://github.com/nmfs-fish-tools/codespaces4r) for a utility to set this up. Another option is to directly copy over the devcontainer.json of choice into a folder named `.devcontainer` within your R project's repository.
+
+## Get installed packages 
+
+```R
+sort(unique(utils::installed.packages()[,1]))
+```
